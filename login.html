@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <ul>
+            <li class=" tab active">Login</li>
+            <li class="tab">Register</li>
+        </ul>
+
+
+        <form action="" method="POST" class="form active" id="login-form">
+            <h3 class="heading">Sign In Here!</h3>
+            <p class="desc">Log into your account in just a few simple steps ❤️</p>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" rules="required|email" type="text" placeholder="VD: email@domain.com"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" rules="required|min:6" type="text" placeholder="Nhập mật khẩu"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">
+                <a href="index.html">Sign in</a>
+            </button>
+        </form>
+
+        <form action="" method="POST" class="form" id="register-form">
+            <h3 class="heading">Register Now!</h3>
+            <p class="desc">Join the SetSail community today & set up a free account ❤️</p>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">User name</label>
+                <input id="fullname" name="fullname" rules="required" type="text" placeholder="VD: Huân Nguyễn"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" rules="required|email" type="text" placeholder="VD: email@domain.com"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" rules="required|min:6" type="text" placeholder="Nhập mật khẩu"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                <input id="password_confirmation" rules="required" name="password_confirmation"
+                    placeholder="Nhập lại mật khẩu" type="text" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Register</button>
+        </form>
+
+
+    </div>
+
+    <script src="./assets/thuvien/validator.js"></script>
+    <script>
+
+        // Validator('#register-form', {
+        //   onSubmit: function (data) {
+        //     console.log(data);
+        //   }
+        // });
+
+        var form = new Validator('#register-form');
+        form.onSubmit = function (formData) {
+            console.log(formData);
+        }
+
+        var form = new Validator('#login-form');
+        form.onSubmit = function (formData) {
+            console.log(formData);
+        }
+
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        const tabs = $$('.tab');
+        const forms = $$('.form');
+
+        tabs.forEach((tab, index) => {
+            const form = forms[index];
+            tab.onclick = function () {
+                $(".tab.active").classList.remove("active");
+                $(".form.active").classList.remove("active");
+
+                this.classList.add("active");
+                form.classList.add("active");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

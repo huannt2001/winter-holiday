@@ -1,0 +1,158 @@
+.product-info-wrapper {
+    padding: 0;
+}
+
+.product-wrap {
+    padding-top: 0;
+    box-shadow : 0 3px 20px 5px rgb(0 0 0 / 10%);
+}
+
+ul.product-tag {
+    margin: 0;
+    gap   : 0;
+}
+
+.product-info-wrapper {
+    box-shadow: none;
+}
+
+
+.product-tag .tag-item {
+    padding   : 24px !important;
+    cursor    : pointer;
+    transition: 0.25s
+}
+
+.product-tag .tag-item:hover {
+    background-color: #fff;
+}
+
+.tour-title-wrap {
+    display    : flex;
+    align-items: center;
+    flex-wrap  : wrap;
+    margin     : 40px 0 0;
+}
+
+.product-description {
+    font-size     : 3rem;
+    color         : #212121;
+    line-height   : 3rem;
+    letter-spacing: 0.1px;
+}
+
+.tour-price {
+    font-size: 1.4rem;
+    color    : #505050;
+}
+
+.tour-price span {
+    font-size  : 1.8rem;
+    color      : var(--primary-color);
+    margin-left: 16px;
+    font-weight: 600;
+}
+
+.product-description p {
+    letter-spacing: 0.6px;
+    padding       : 20px 0 40px;
+}
+
+.btn--short-info i {
+    margin-right: 8px;
+}
+
+.sku_wrapper span:not(.qodef-meta-label) {
+    letter-spacing: 0.6px;
+}
+
+.sku_wrapper-service {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 44px;
+}
+
+.sku_wrapper-service span {
+    min-width  : 122px;
+    font-weight: 600;
+}
+
+.sku_wrapper-service .value {
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 0 20px;
+}
+
+.form-order {
+    background-color: #3fd0d4;
+    padding         : 20px;
+}
+
+.form-order h2 {
+    font-size: 2.2rem;
+    color    : #fff;
+}
+
+.form-order .footer__contact-wrap {
+    background-color: #6fdcdf;
+}
+
+.form-order .footer__contact-input {
+    background-color: #6fdcdf;
+    color           : #fff;
+}
+
+.form-order .footer__contact-wrap i {
+    color: #fff;
+}
+
+.footer__contact-wrap-with-icon {
+    position: relative;
+}
+
+.icon-comment {
+    position : absolute;
+    top      : 10px;
+    left     : 22px;
+    color    : #fff;
+    font-size: 1.4rem;
+}
+
+.form-order .footer__contact-wrap {
+    border: none;
+}
+
+textarea.footer__contact-wrap {
+    padding  : 8px 4px 0 54px;
+    font-size: 1.4rem;
+    color    : #fff;
+    outline  : none;
+}
+
+.form-order .footer__contact-subcrice {
+    background-color: #fff;
+    transition      : 0.3s;
+}
+
+.check-availability {
+    width           : 100%;
+    padding         : 15px;
+    font-size       : 1.4rem;
+    font-weight     : 600;
+    letter-spacing  : .5px;
+    text-transform  : uppercase;
+    background-color: #fff;
+    border          : none;
+    cursor          : pointer;
+    display         : block;
+    text-decoration : none;
+    color           : #212121;
+    margin-bottom   : 8px;
+    text-align      : center;
+    transition      : 0.3s;
+}
+
+.form-order .footer__contact-subcrice:hover,
+.check-availability:hover {
+    background-color: #23a9af;
+}

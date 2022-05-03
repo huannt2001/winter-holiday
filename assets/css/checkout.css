@@ -1,0 +1,102 @@
+.styled-table {
+    border-collapse: collapse;
+    margin         : 25px 0;
+    font-size      : 1.4rem;
+    font-family    : sans-serif;
+    width          : 100%;
+    box-shadow     : 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    color     : #212121;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding   : 25px 15px;
+    text-align: center;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #ccc;
+    border-top   : 1px solid #ccc;
+}
+
+.styled-table tbody tr .remove_item {
+    font-size : 1.6rem;
+    transition: 0.25s;
+    cursor    : pointer;
+}
+
+.styled-table tbody tr .remove_item:hover {
+    color: var(--primary-color);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color      : #009879;
+}
+
+.styled-table .cart {
+    justify-content: center;
+}
+
+.checkout-image-wrap {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.checkout-image-wrap img {
+    width: 86px;
+}
+
+.checkout-actions {
+    display    : flex;
+    flex-wrap  : wrap;
+    align-items: center;
+    margin     : 40px 0;
+}
+
+.checkout-actions .search-products {
+    width  : 180px;
+    padding: 21px;
+}
+
+.cart-totals {
+    margin: 20px 0 40px;
+}
+
+.cart-totals h2 {
+    font-size  : 3rem;
+    font-weight: 600;
+}
+
+.cart-totals .styled-table {
+    box-shadow: none;
+}
+
+.cart-totals .styled-table th {
+    width     : 20%;
+    text-align: left;
+    padding   : 15px 0;
+}
+
+.cart-totals .styled-table td {
+    padding   : 15px 0;
+    text-align: left;
+}
+
+.cart-totals .styled-table td ul {
+    list-style  : none;
+    padding-left: 0;
+}
+
+.cart-totals .styled-table td ul li {
+    margin: 16px 0;
+}
+
+.checkout-image-wrap p {
+    margin-left: 10px;
+}

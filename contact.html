@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Winter Holidays</title>
+
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="header">
+            <div class="mobile-header-menu hide-on-PC js-mobile-btn">
+                <i class="mobile-header-menu-icon fas fa-bars "></i>
+            </div>
+            <div class="mobile-menu-overlay"></div>
+            <div class="header__logo">
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt=""
+                    class="header__logo-img hide-on-mobile-tablet">
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png" alt=""
+                    class="hide-on-PC mobile-header__logo-img">
+            </div>
+            <div class="header__navbar js-mobile-menu ">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a href="index.html" class="header__navbar-link">
+                            <span class="header__navbar-text">Home</span>
+
+                            <span class="hide-on-PC">
+                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="about.html" class="header__navbar-link">
+                            <span class="header__navbar-text ">About</span>
+
+                            <span class="hide-on-PC">
+                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </li>
+
+                    <li class="header__navbar-item">
+                        <a href="contact.html" class="header__navbar-link">
+                            <span class="header__navbar-text active">Contact</span>
+
+                            <span class="hide-on-PC">
+                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                            </span>
+                        </a>
+
+                    </li>
+
+                    <li class="header__navbar-item">
+                        <a href="blog.html" class="header__navbar-link">
+                            <span class="header__navbar-text">Blog</span>
+
+                            <span class="hide-on-PC">
+                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                            </span> </a>
+
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">
+                                        <span class="subnav__item-text">Blog Masonry</span>
+                                    </a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">
+                                        <span class="subnav__item-text">Blog Standard</span>
+                                    </a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">
+                                        <span class="subnav__item-text">Post Types</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="product.html" class="header__navbar-link">
+                            <span class="header__navbar-text">Shop</span>
+
+                            <span class="hide-on-PC">
+                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                            </span> </a>
+
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="product.html" class="subnav__item-link">
+                                        <span class="subnav__item-text">Product List</span>
+                                    </a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">
+                                        <span class="subnav__item-text">Product Single</span>
+                                    </a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">
+                                        <span class="subnav__item-text">Shop Layout</span>
+                                    </a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">
+                                        <span class="subnav__item-text">Shop Page</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="header__search hide-on-mobile-tablet">
+                <div class="header__search-container">
+                    <div class="navbar-list__item navbar__user">
+                        <img src="https://yt3.ggpht.com/yti/APfAmoHhbOG5vp6H7urtDmLtQtSZJGLvnCdxXIbcCg=s88-c-k-c0x00ffffff-no-rj-mo"
+                            alt="" class="navbar__user-img">
+                        <span class="navbar__user-name">Huan Nguyen</span>
+
+                        <ul class="navbar__user-menu">
+                            <li class="navbar__user-menu-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="navbar__user-menu-item">
+                                <a href="">Địa chỉ của tôi</a>
+                            </li>
+                            <li class="navbar__user-menu-item">
+                                <a href="">Đơn mua</a>
+                            </li>
+                            <li class="navbar__user-menu-item navbar__user-menu-item--separate">
+                                <a href="login.html">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__search-item">
+                        <i class="header__search-icon fas fa-shopping-basket"></i>
+
+                        <div class="header__cart">
+                            <p class="header__cart-text">No products in the cart.</p>
+                        </div>
+                    </div>
+
+                    <div class="header__search-item">
+                        <i class="header__search-icon fas fa-search"></i>
+                    </div>
+
+                    <div class="header__search-item">
+                        <i class="header__search-icon fas fa-bars  js-bar"></i>
+                    </div>
+
+                    <div class="menu-overlay"> </div>
+                    <div class="menu-modal">
+                        <span class="menu-modal-close">
+                            <i class="menu-modal-close-icon fas fa-times js-close"></i>
+                        </span>
+                        <div class="menu-modal-container">
+                            <div class="menu-modal-in4">
+
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-sidearea.png"
+                                    alt="" class="menu-modal-img">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/sidearea-img-2.png"
+                                    alt="" class="menu-modal-img">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/sidearea-img.jpg"
+                                    alt="" class="menu-modal-img menu-modal-img-shadow ">
+
+                            </div>
+                            <p class="menu-modal-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+                            </p>
+                            <p class="menu-modal-header">Follow Me</p>
+                            <div class="menu-modal-social">
+
+                                <a href="" class="menu-modal-link">
+                                    <i class="menu-modal-icon fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="menu-modal-link">
+                                    <i class="menu-modal-icon fab fa-instagram"></i>
+                                </a>
+                                <a href="" class="menu-modal-link">
+                                    <i class="menu-modal-icon fab fab fa-pinterest-p"></i>
+                                </a>
+                                <a href="" class="menu-modal-link">
+                                    <i class="menu-modal-icon fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mobile-header-menu hide-on-PC">
+                <i class="mobile-header-menu-icon far fa-user-circle"></i>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="grid">
+                <!-- MAIN SLIDE -->
+                <div class="slider">
+                    <div class="row">
+                        <div class=" col l-12 m-12 c-12 ">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14899.267981526908!2d105.8426663!3d20.9999717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2ec575c01017afa!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gUXXhu5FjIETDom4!5e0!3m2!1svi!2s!4v1651457203801!5m2!1svi!2s"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introduce p-t-50">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-7 m-12 c-12">
+                                <div class="about-left-content">
+                                    <h2>Contact Us Now</h2>
+                                    <p>Si elit omnes impedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia
+                                        vim. Tn eam dimo diam ea. Piber Korem sit amet.</p>
+                                    <div style="height: 13px;"></div>
+                                    <p>Al elit omnes impedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia
+                                        vim. En eam dico similique, ut sint posse sit, eum sumo diam ea. Liber
+                                        consectetuer in mei, sea in imperdiet assue verit contentio nes, an his cibo
+                                        blandit tacimates. Iusto iudi cabit sim ilique id velex, in sea rebum deseruisse
+                                        appellantur. Etiam rhoncus. Maec enas tempus, tellus eget condimentum
+                                        rhoncus.Aliquam lorem ante, dapibus in, viverra quis, feugiat
+                                    </p>
+                                    <a href="#" class="about-left-content-link">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-5 m-12 c-12">
+                                <div class="about-image-wrap">
+                                    <img src="./assets/images/contact/contact-us-img-1.jpg" alt="" class="about-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-infomation">
+                    <!-- Grid -> Row -> Column-->
+                    <div class="grid wide">
+                        <div class="row app__content">
+                            <!-- Product item -->
+                            <div class="col l-4 m-6 c-12">
+                                <div class="contact-address">
+                                    <h2>Paris</h2>
+                                    <p>Agam fabulas. Ut audiam invenire iracun. Tn eam dimo diam ea. Piqor sit.</p>
+                                    <ul class="contact-info">
+                                        <li>
+                                            <i class="fas fa-envelope"></i>
+                                            <a href="#">setsail@qodeinteractive.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone-alt"></i>
+                                            <a href="#">5544332211</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <a href="#">Place des Pyramides 7 Paris </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="contact-address">
+                                    <h2>London</h2>
+                                    <p>Ugam fabulas. Af eodiam invenire iracun. Tu aem dimo diam ea. Ribor cit.</p>
+                                    <ul class="contact-info">
+                                        <li>
+                                            <i class="fas fa-envelope"></i>
+                                            <a href="#">setsail@example.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone-alt"></i>
+                                            <a href="#">0011223344</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <a href="#">11 Strand London WC2N 5RJ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="contact-address">
+                                    <h2>New York</h2>
+                                    <p>Egam fobalas. Ut audiam invenire iracun. Tn eam pima qiam ea. Piber cif.</p>
+                                    <ul class="contact-info">
+                                        <li>
+                                            <i class="fas fa-envelope"></i>
+                                            <a href="#">setsail@qodeinteractive.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone-alt"></i>
+                                            <a href="#">1122334455</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <a href="#">Broadway New York, NY 10031</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="form-review">
+                                    <h2>Leave a Reply</h2>
+                                    <form action="">
+                                        <label for="fname">Message*</label>
+                                        <textarea class="input-comment" name="" id="" cols="100%" rows="10"></textarea>
+                                        <label for="fname">Name*</label>
+                                        <input type="text" id="fname" name="firstname" class="input-comment">
+
+                                        <label for="lname">Email*</label>
+                                        <input type="email" id="lname" name="lastname" class="input-comment">
+                                        <input type="submit" value="Send" class="btn--review">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid">
+                <div class="footer__container">
+                    <div class="row">
+                        <div class="col l-3 m-6 footer-item">
+                            <div class="footer__logo">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-footer.png"
+                                    alt="" class="footer__logo-img">
+                            </div>
+                            <div class="footer__description">
+                                Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                            </div>
+                            <a href="mailto:setsail@qode.com" class="footer__link">
+                                <i class="footer-icon far fa-envelope"></i>
+                                setsail@qode.com
+                            </a>
+                            <a href="tel:1%20562%20867%205309" class="footer__link">
+                                <i class="footer-icon fas fa-phone-alt"></i>
+                                1 562 867 5309
+                            </a>
+                            <a href="https://www.google.rs/maps/place/Charging+Bull/@40.7055242,-74.0133806,20z/data=!4m5!3m4!1s0x0:0xc7db393ae1eff521!8m2!3d40.7055537!4d-74.0134436"
+                                class="footer__link">
+                                <i class="footer-icon fas fa-map-marker-alt"></i>
+                                Broadway & Morris St, New York
+                            </a>
+                        </div>
+                        <div class="col l-3 m-6 footer-item">
+                            <div class="footer__heading">Our Recent Posts</div>
+                            <ul class="footer__place-list">
+                                <li class="footer__place-item">
+                                    <a href="" class="footer__place-item-link-name">Visit Thailand, Bali And China</a>
+                                    <a href="" class="footer__place-item-link-day">September 5, 2021</a>
+                                </li>
+                                <li class="footer__place-item">
+                                    <a href="" class="footer__place-item-link-name">The Sound Of Our Jungle</a>
+                                    <a href="" class="footer__place-item-link-day">September 5, 2021</a>
+                                </li>
+                                <li class="footer__place-item">
+                                    <a href="" class="footer__place-item-link-name">New Year, New Resolutions!</a>
+                                    <a href="" class="footer__place-item-link-day">September 5, 2021</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-6 footer-item">
+                            <div class="footer__heading">Subscribe to our Newsletter</div>
+                            <span class="footer__subheading">Etiam rhoncus. Maecenas temp us, tellus eget condimentum
+                                rho</span>
+                            <div class="footer__contact">
+                                <form action="">
+                                    <div class="footer__contact-wrap">
+                                        <i class="footer-icon fas fa-user"></i>
+                                        <input class="footer__contact-input" type="text" required placeholder="Name">
+                                    </div>
+                                    <div class="footer__contact-wrap">
+                                        <i class="footer-icon far fa-envelope"></i>
+                                        <input class="footer__contact-input" type="email" required placeholder="Email">
+                                    </div>
+
+                                    <input class="footer__contact-subcrice" type="submit" value="Subcribe">
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 footer-item">
+                            <div class="footer__heading">Our Instagram</div>
+                            <span class="footer__subheading">Aliquam lorem ante, dapibus inviver raqui feugiat a,
+                                tellus. Phasellus null</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    Powered by @ <a href="#" class="footer__bottom-link">Nguyen Trang Huan</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__icon hide-on-mobile-tablet">
+            <a href="checkout.html" class="cart__icon-link">
+                <i class=" fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <div class="cart__icon-logo hide-on-mobile-tablet">
+            <a href="#" class="cart__icon-link">
+                <svg x="0px" y="0px" viewBox="0 0 87 87" style="fill: #fff;height: 26px;">
+                    <path d="M55.4,81.5c6.1-11.1,5.2-16.1-4.3-24.3c6.1-3.5,9.5-8.5,9.1-15.7c-0.5-8.2-7.7-14.7-16.3-14.6
+                        c-8.5,0.1-15.6,6.7-15.9,15c-0.3,8.5,5.9,15.8,14.3,16.6c1.4,0.1,2.8,0.2,4.2,0.5c5.9,1.2,10.2,6.7,9.8,12.6
+                        c-0.4,6.4-5.5,11.4-11.8,11.7C24.9,84.2,5.9,68.5,3.2,49.3C-0.1,26.9,14.4,6.8,36.4,2.8c22.3-4,43.4,10,48.1,32
+                        c4.3,20-8.6,41.2-28.4,46.7C55.9,81.5,55.6,81.5,55.4,81.5z"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/thuvien/counter/jquery.waypoints.min.js"></script>
+    <script src="./assets/thuvien/counter/counterup.js"></script>
+    <script src="./assets/thuvien/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
