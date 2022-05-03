@@ -72,7 +72,7 @@
                     </li>
 
                     <li class="header__navbar-item">
-                        <a href="blog.html" class="header__navbar-link">
+                        <a href="index.html" class="header__navbar-link">
                             <span class="header__navbar-text">Blog</span>
 
                             <span class="hide-on-PC">
@@ -455,8 +455,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/thuvien/counter/jquery.waypoints.min.js"></script>
     <script src="./assets/thuvien/counter/counterup.js"></script>
-    <script src="./assets/thuvien/main.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        const navMobileBtn = document.querySelector('.js-mobile-btn')
+        const mobileMenu = document.querySelector('.js-mobile-menu')
+        var mobileOverlay = document.querySelector('.mobile-menu-overlay')
+
+        navMobileBtn.onclick = function () {
+            mobileMenu.style.transform = "scaleY(1)";
+            mobileOverlay.style.display = "block";
+        }
+
+        mobileOverlay.onclick = function () {
+            mobileMenu.style.transform = "scaleY(0)";
+            mobileOverlay.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

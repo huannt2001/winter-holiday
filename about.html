@@ -7,8 +7,8 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/about.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -37,7 +37,7 @@
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item">
                         <a href="index.html" class="header__navbar-link">
-                            <span class="header__navbar-text">Home</span>
+                            <span class="header__navbar-text active">Home</span>
 
                             <span class="hide-on-PC">
                                 <i class="nav-mobile-icon  fas fa-angle-right"></i>
@@ -48,7 +48,7 @@
                     </li>
                     <li class="header__navbar-item">
                         <a href="about.html" class="header__navbar-link">
-                            <span class="header__navbar-text active">About</span>
+                            <span class="header__navbar-text ">About</span>
 
                             <span class="hide-on-PC">
                                 <i class="nav-mobile-icon  fas fa-angle-right"></i>
@@ -69,7 +69,7 @@
                     </li>
 
                     <li class="header__navbar-item">
-                        <a href="blog.html" class="header__navbar-link">
+                        <a href="index.html" class="header__navbar-link">
                             <span class="header__navbar-text">Blog</span>
 
                             <span class="hide-on-PC">
@@ -555,7 +555,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/thuvien/counter/jquery.waypoints.min.js"></script>
     <script src="./assets/thuvien/counter/counterup.js"></script>
-    <!-- <script src="./assets/thuvien/main.js"></script> -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -572,6 +571,20 @@
             });
         });
     </script>
+    <script>
+        const navMobileBtn = document.querySelector('.js-mobile-btn')
+        const mobileMenu = document.querySelector('.js-mobile-menu')
+        var mobileOverlay = document.querySelector('.mobile-menu-overlay')
+
+        navMobileBtn.onclick = function () {
+            mobileMenu.style.transform = "scaleY(1)";
+            mobileOverlay.style.display = "block";
+        }
+
+        mobileOverlay.onclick = function () {
+            mobileMenu.style.transform = "scaleY(0)";
+            mobileOverlay.style.display = "none";
+        }</script>
 </body>
 
 </html>

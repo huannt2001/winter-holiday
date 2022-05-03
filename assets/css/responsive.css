@@ -307,6 +307,14 @@
         margin-right: 20px;
     }
 
+    .product_quantity_minus {
+        padding: 0 4px;
+    }
+
+    .input-quantity {
+        padding: 10px 4px;
+    }
+
     /* End Checkout */
 
     /* Begin Contact */

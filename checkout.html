@@ -51,7 +51,7 @@
                     </li>
                     <li class="header__navbar-item">
                         <a href="about.html" class="header__navbar-link">
-                            <span class="header__navbar-text active">About</span>
+                            <span class="header__navbar-text ">About</span>
 
                             <span class="hide-on-PC">
                                 <i class="nav-mobile-icon  fas fa-angle-right"></i>
@@ -72,7 +72,7 @@
                     </li>
 
                     <li class="header__navbar-item">
-                        <a href="blog.html" class="header__navbar-link">
+                        <a href="index.html" class="header__navbar-link">
                             <span class="header__navbar-text">Blog</span>
 
                             <span class="hide-on-PC">
@@ -101,7 +101,7 @@
                     </li>
                     <li class="header__navbar-item">
                         <a href="product.html" class="header__navbar-link">
-                            <span class="header__navbar-text">Shop</span>
+                            <span class="header__navbar-text active">Shop</span>
 
                             <span class="hide-on-PC">
                                 <i class="nav-mobile-icon  fas fa-angle-right"></i>
@@ -256,34 +256,11 @@
                                             <tr>
                                                 <td><i class="fas fa-times remove_item"></i></td>
                                                 <td>
-                                                    <div class="checkout-image-wrap">
+                                                    <a href="cart.html" class="checkout-image-wrap">
                                                         <img src="./assets/images/product/shop-1-gallery-1-300x300.jpg"
                                                             alt="">
                                                         <p>Skis</p>
-                                                    </div>
-                                                </td>
-                                                <td>$760</td>
-                                                <td>
-                                                    <div class="cart">
-                                                        <!-- <input type="number"> -->
-                                                        <input type="button" class="product_quantity_minus"
-                                                            onclick="decrementValue()" value="-">
-                                                        <input type="text" name="quantity" value="1" maxlength="2"
-                                                            max="10" size="1" id="number" class="input-quantity">
-                                                        <input type="button" class="product_quantity_plus"
-                                                            onclick="incrementValue()" value="+">
-                                                    </div>
-                                                </td>
-                                                <td>$760</td>
-                                            </tr>
-                                            <tr>
-                                                <td><i class="fas fa-times remove_item"></i></td>
-                                                <td>
-                                                    <div class="checkout-image-wrap">
-                                                        <img src="./assets/images/product/shop-1-gallery-1-300x300.jpg"
-                                                            alt="">
-                                                        <p>Skis</p>
-                                                    </div>
+                                                    </a>
                                                 </td>
                                                 <td>$760</td>
                                                 <td>
@@ -443,8 +420,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/thuvien/counter/jquery.waypoints.min.js"></script>
     <script src="./assets/thuvien/counter/counterup.js"></script>
-    <script src="./assets/thuvien/main.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        const navMobileBtn = document.querySelector('.js-mobile-btn')
+        const mobileMenu = document.querySelector('.js-mobile-menu')
+        var mobileOverlay = document.querySelector('.mobile-menu-overlay')
+
+        navMobileBtn.onclick = function () {
+            mobileMenu.style.transform = "scaleY(1)";
+            mobileOverlay.style.display = "block";
+        }
+
+        mobileOverlay.onclick = function () {
+            mobileMenu.style.transform = "scaleY(0)";
+            mobileOverlay.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
